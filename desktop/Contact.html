@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link async href="http://fonts.googleapis.com/css?family=Warnes" rel="stylesheet" type="text/css"/>
+        <style>
+         #container{
+            color:gray;
+            font-family: SimHei,sans-serif;
+            margin: 8%;
+        }
+        a{
+		text-decoration:none;
+	     }
+	    a:link,a:visited{
+            color:dimgray;
+        }
+        a:hover{
+            color: black;
+        }
+        #return{
+			   position: fixed;;
+			   left:95%;
+               top:2%;
+		   }
+        #contacttitle{
+            font-size: 30px;
+            color:black;
+        }
+        #phone>div{
+            margin-top:15px;
+        }
+        #emailtitle{
+            margin-top:15px;
+        }
+        form>div{
+            margin-top:2%;
+        }
+        .a{
+            height: 30px;
+            width: 200px;
+        }
+        .b{
+            height:50px;
+            width:400px;
+        }
+        td{
+            width:200px;
+        }
+        .button{
+            font-family: SimHei,sans-serif;
+            color:white;
+            background-color: black;
+            height:50px;
+            width:200px;
+        }
+        .first_neon {
+            background: none repeat scroll 0 0 #000000;
+            border: 1px solid;
+            border-radius: 15px;
+            color: #FFFFFF;
+            cursor: pointer;
+            float: left;
+            font-family:"Warnes";
+            margin: auto;
+            padding: 26px 10px;
+            text-align: center;
+            text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px whitesmoke, 0 0 70px whitesmoke, 0 0 80px whitesmoke, 0 0 100px whitesmoke;
+            transition: text-shadow 0.5s ease 0s;
+            width: 250px;
+        }
+
+        .first_neon:hover {
+            text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF;
+        }
+        #contactmiddle{
+            display:inline-block;
+            position: absolute;
+            top:20%;
+        }
+        .neon{
+            display:inline-block;
+            position: absolute;
+            top:20%;
+            left:60%;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="return">
+                <a href="index.html"><img src="wrong.png"></a>
+	        </div>
+            <div id="contacttitle">
+                联系我们
+            </div>
+            <div id="contactmiddle">
+                <div id="phone">
+                    <div id="phonetitle">联系电话</div>
+                    <div>400-123-123456</div>
+                </div>
+                <div id="email">
+                    <div id="emailtitle">
+                        烦请提供以下信息，以便我们及时与您取得联系。
+                    </div>
+                    <table>
+                    <form>
+                        <tr><td>喜好</td><td>主题</td></tr>
+                        <tr><td>
+                        <select class="a">
+                            <option value=""></option>
+                            <option value="">时尚精品及配饰</option>
+                            <option value="">香水，彩妆及护肤品</option>
+                            <option value="">腕表及高级珠宝</option>
+                            <option value="">企业及品牌信息</option>
+                        </select></td>
+                        <td>
+                        <select class="a">
+                            <option value=""></option>
+                            <option value="">产品</option>
+                            <option value="">售后服务</option>
+                            <option value="">品牌精品店</option>
+                            <option value="">品牌活动及其他</option>
+                        </select></td>
+                        </tr>
+
+                    <tr>
+                    <td>留言</td>
+                    </tr>
+                    <tr>
+                    <td><input type="textarea" class="b"/></td>
+                    </tr>
+                    <tr><td>名字</td><td>电子邮件</td></tr>
+                    <tr>
+                    <td><input type="text" class="a" /></td><td><input type="email"  class="a"/></td>
+                    </tr>
+                    <tr><td>邮政编码</td><td>手机</td></tr>
+                    <tr>
+                    <td><input type="text" class="a"/></td><td><input type="text" class="a"/></td>
+                    </tr>
+                    <tr><td><input type="checkbox" />本人同意所提供的资料可按照本人已阅读，理解及同意之<a href="#">法律声明</a>及<a href="PrivacyPolicy.html">隐私政策</a>而持有及使用.</td><tr>
+                    <tr><td><input type="button" class="button" value="提交"/></td></tr>
+                    </form>
+                    </table>
+                </div>
+            </div>
+            <div class="neon">
+			    <div class="first_neon" onclick="window.open('WILLSTUDIO.html','_self')">FOCUS US</div>
+		    </div>  
+        </div>
+    <script src="js/neon.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/neon_text.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.first_neon').neonText({
+				textColor:'white',
+				textSize:'40pt',
+				neonHighlight:'lightslategray',
+				neonHighlightColor:'gainsboro',
+				neonHighlightHover:'black',
+				neonFontHover:'gray'
+			});
+		});
+		</script>
+    </body>
+</html>

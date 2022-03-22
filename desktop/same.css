@@ -1,0 +1,112 @@
+        body{
+            background-color: black;
+            margin-top:-5px;
+        }
+        #container{
+            width:100%;
+            height:100%;
+            background-color: white;
+        }
+        #header{
+            width:100%;
+            height:15%;
+        }
+        #search{
+            width: 100%;
+            text-align: right;
+            font-family: simhei,sans-serif;
+        }
+        #search_1{
+            margin-right: 1%;
+        }
+        #search_1>li{
+            display: inline-block;
+            list-style-type: none;
+            font-size: 15px;
+        }
+        #logo{
+            margin-top:25px;
+            padding-top: 20px;
+            position: relative;
+            text-align: center;
+        }
+        a{
+            text-decoration:none;
+        }
+        a:link,a:visited{
+            color:dimgray;
+        }
+        a:hover{
+            color: black;
+        }
+        #menu{
+            text-align: center;
+            height:30%;
+        }
+        #menu_1{
+            list-style-type: none;
+            margin-top:30px;
+            padding: 0 25px;
+            text-align: center;
+            position: relative;
+            font-size: 20px;
+            font-family: SimHei,sans-serif;
+        }
+        .menuli:hover{
+            border-top: 2px solid black;
+        }
+        .menuli{
+            display: inline-block;
+            margin: 0 20px;
+            padding: 0;
+            height:28px;
+        }
+        .menuli>dl{
+            display: none;
+            position: absolute;
+            width: auto;
+            margin-top: 5px;
+            font-size: 19px;
+        }
+       
+        #middle{
+            margin-top:40px;
+            width:100%;
+            height: 50%;
+            text-align:center;
+        }
+        #menu_2{
+            margin-top:3%; 
+            display: block;
+            white-space: nowrap;
+            overflow: auto;
+        }
+        .menu_2{
+            list-style-type: none;
+            margin-top:2%;
+            padding: 0 0;
+            position: relative;
+        }
+        .menuli_2{
+            display: inline-block;
+            margin: 0 8px;
+            padding: 0;
+            height:28px;
+            font-size:10px;
+        }
+        .username,.password,.name,.e-mail{
+            height: 30px;
+            width: 200px;
+        }
+        .button{
+            font-family: SimHei,sans-serif;
+            color:white;
+            background-color: black;
+            height:50px;
+            width:200px;
+        }
+         .item{
+            color:lightslategray;
+            margin-top: 10%;
+            font-size: 16px;
+         }

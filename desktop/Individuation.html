@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+        #return{
+			   position: fixed;;
+			   left:95%;
+               top:2%;
+		   }
+        .button{
+            font-family: SimHei,sans-serif;
+            color:white;
+            background-color: black;
+            height:50px;
+            width:200px;
+        }
+        #Inmiddle{
+            margin: 8%;
+        }
+        a:link,a:visited{
+            color:dimgray;
+        }
+        a:hover{
+            color: black;
+        }
+        .username,.password,.name,.e-mail{
+            height: 30px;
+            width: 200px;
+        }
+        .item{
+            color:lightslategray;
+            margin-top: 20px;
+            font-size: 16px;
+         }
+         #profile{
+             display: inline-block;
+         }
+         #address{
+             margin-left:5%;
+             display: inline-block;
+             vertical-align: top;
+         }
+         #wishlist{
+             margin-left:5%;
+             display: inline-block;
+             vertical-align: top;
+         }
+         h1{
+             font-family: SIMHEI;
+         }
+         .img{
+             margin-top:30px;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="return">
+                <a href="index.html"><img src="wrong.png"></a>
+	        </div>
+            <div id="Inmiddle">
+                <div id="profile">
+                   <div id="registermiddle">
+                      <div id="title">
+                         <h1>我的账户&nbsp;/&nbsp;注册详细信息</h1>
+                      </div>
+                    <div id="img">
+                    <div class="img">您可以在此修改您的个人信息：电子邮件地址、注册密码。</div>
+                    <div class="img"><a href="#">修改您的电子邮件</a></div>
+                    <div class="img"><a href="#">修改您的电子邮件或您的密码</a></div>
+                    </div>
+                    <div id="main">
+                    <form>
+                        <div class="item">
+                            用户名：<input type="text" class="username" onblur="CheckInput(this,getElementById('username_msg'));">
+                            <span id=username_msg></span>
+                            </div>
+                        <div class="item">
+                            密码：&nbsp;&nbsp;&nbsp;<input type="password" class="password" onblur="CheckInput(this,getElementById('username_pwd'));">
+                            <span id=username_pwd></span>
+                            </div>
+                        <div class="item">
+                            姓名：&nbsp;&nbsp;&nbsp;<input type="text" class="name" onblur="CheckInput(this,getElementById('username_name'));">
+                            <span id=username_name></span>
+                            </div>
+                        <div class="item">
+                            邮箱：&nbsp;&nbsp;&nbsp;<input type="text" class="e-mail" onblur="CheckInput(this,getElementById('username_email'));">
+                            <span id=username_email></span>
+                            </div>
+                        <div class="item">
+                            <input type="radio" name="sex"  value="male">先生
+                            <input type="radio" name="sex" value="female">女士
+                        </div>
+                        <div>WIll STUDIO将利用您的个人数据从总体上完善我们的服务。
+                            <br />WIll STUDIO将妥善保管您的资料。
+                            <br />查看<a href="PrivacyPolicy.html">隐私声明</a>，了解详细信息。
+                        </div>
+                        <div class="item"><input type="checkbox" class="confirm">我同意WIll STUDIO收集我的个人信息、创建购物习惯档案</div>
+                        <div class="item"><input type="button" class="button" value="保存"></div>        
+                    </form>
+                    </div>
+                    </div>
+                </div>
+                <div id="address">
+                    <div id="title">
+                         <h1>我的账户&nbsp;/&nbsp;地址簿</h1>
+                      </div>
+                    <div id="img">
+                    <div class="img">在此可以保存您的配送地址便捷支付流程。</div>
+                    <div class="img">也可以将常用地址设为“默认”。</div>
+                    <div class="img">您还没有保存配送地址。</div>
+                    </div>
+                    <div class="item"><input type="button" class="button" value="添加新地址"></div>
+                </div>
+                <div id="wishlist">
+                    <div id="title">
+                         <h1>我的账户&nbsp;/&nbsp;收藏夹</h1>
+                      </div>
+                    <div id="img">
+                    <div class="img">创建您的收藏夹。</div>
+                    <div class="img">您可以在收藏夹中保存50件商品，并随时查看您最喜欢的商品库存情况并将其放入购物袋。</div>
+                    <div class="img">您的“收藏夹”为空的</div>
+                    </div>
+                    <div class="item"><input type="button" class="button" value="继续购物" onclick="window.open('index.html','_self')"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

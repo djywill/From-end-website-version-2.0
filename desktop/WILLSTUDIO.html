@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#header").animate({
+                 left:'30%'
+            },5000);
+            $("#header").animate({
+                 top:'100%'
+            },2000);
+            $("#middle").fadeIn(5000);
+            $("#footer").fadeOut(10000)
+            });
+        </script>
+        <style>
+        *{
+            color:whitesmoke;
+        }
+        body{
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            margin:0;
+        }
+        #header{
+            width: 900px;
+            font-size:60px;
+            font-family: BRADLEY HAND ITC,simhei;
+            position: fixed;
+            top:0;
+        }
+        #middle{
+            font-size:40px;
+            font-family: century gothic;
+            text-align: center;
+            margin-top:14%;
+            display: none;
+        }
+        .a1{
+            background-image: url("goods/facebook.png");
+            background-repeat: no-repeat;
+            background-position-x: 42%;
+            color:rgb(59,89, 152);
+        }
+        .a2{
+            background-image: url("goods/twitter.png");
+            background-repeat: no-repeat;
+            background-position-x: 42%;
+            color:rgb(59,200, 244);
+        }
+        .a3{
+            background-image: url("goods/reddit.png");
+            background-repeat: no-repeat;
+            background-position-x: 42%;
+        }
+        .a4{
+            background-image: url("goods/wechat.png");
+            background-repeat: no-repeat;
+            background-position-x: 42%;
+            color:#62b900;
+        }
+        .a5{
+            background-image: url("goods/weibo.png");
+            background-repeat: no-repeat;
+            background-position-x: 42%;
+            color:red;
+        }
+        #focus{
+            font-family: century gothic;
+        }
+        #footer{
+            font-size:15px;
+            font-family: centaur,simhei;
+            vertical-align: bottom;
+            text-align: center;
+            margin-top:20%;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                WIll STUDIO STAY WITH YOU
+            </div>
+            <div id="middle">
+                <div id="focus">FOCUS US</div>
+                <div class="a1">Facebook</div>
+                <div class="a2">Twitter</div>
+                <div class="a3">Reddit</div>
+                <div class="a4">WeChat</div>
+                <div class="a5">Weibo</div>
+            </div>
+            <div id="footer">
+                <div>Powered by DJY Copyright © 2017 WIll STUDIO - All Rights Reserved - VAT 66666666666 Corporate Information</div>
+            </div>
+        </div>
+    </body>
+</html>
+

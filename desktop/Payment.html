@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="same.css" />
+        <style>
+        #paymentmiddle{
+            text-align: center;
+            font-family:PFDinTextPro, SimHei;
+            margin-top:3%;
+        }
+        #left{
+            vertical-align: top;
+            display: inline-block;
+            margin-right: 10%;
+        }
+        #right{
+            vertical-align: top;
+            display:inline-block;
+            
+        }
+        #leftitem{
+            list-style-type: none;
+        }
+        .paymentitem{
+            list-style-type: none;
+            border:solid gray 1px;
+            margin-top:3%;
+            background-color: whitesmoke;
+        }
+        #paymethod{
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .titlepay{
+            margin-top: 5%;
+            font-size: 25px;
+            
+        }
+        #goods{
+            margin-top:15%;
+        }
+        #total{
+            margin-top: 15%;
+            border:solid gray 1px;
+            background-color: whitesmoke;
+        }
+        #paymethod-1{
+            display:inline-block;
+        }
+        #paymethod-2{
+            vertical-align: top;
+            display:inline-block;
+            text-align: right;
+        }
+        #footer{
+            margin-top: 0%;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <div id="search">
+                    <ul id="search_1">
+                        <li><a href="search.html">搜索&nbsp;&nbsp;<img src="search.png" style="margin-bottom:-2px; " /></a></li>
+                        <li><a href="shoppingbag.html">购物袋&nbsp;&nbsp;<img src="shoppingbag.png" style="margin-bottom:-2px; "/></a></li>
+                    </ul>
+                </div>
+                <div id="logo">
+                    <a href="index.html"><img src="logo.PNG" /></a>
+                </div>
+            </div>
+                <div id="paymentmiddle">
+                    <div id="left">
+                        <ul id="leftitem">
+                            <li class="paymentitem">
+                                <br />
+                                <div>您作为<a href="Individuation.html">DJY - 12345270@qq.com</a>订购</div>
+                                <br />
+                            </li>
+                            <li class="paymentitem">
+                                <div>
+                                    <div class=titlepay>配送地址</div>
+                                    <br/>
+                                    Ding JiaoYang
+                                    <br/>...
+                                    <br/>...
+                                    <br/>珠海市(CN)
+                                    <br />
+                                    <br />
+                                </div>
+                            </li>
+                            <li class="paymentitem">
+                                <div class=titlepay>支付方式</div>
+                                <br/>
+                                <div >
+                                    <div id="paymethod-1">
+                                        <form>
+                                            <ul id="paymethod">
+                                    <li><input type="radio" name="paymethod" />微信</li>
+                                    <li><input type="radio" name="paymethod" />支付宝</li>
+                                    <li><input type="radio" name="paymethod" />银联</li>
+                                    <li><input type="radio" name="paymethod" />比特币</li>
+                                    <li><input type="radio" name="paymethod" />Visa</li>
+                                    <li><input type="radio" name="paymethod" />美国运通卡</li>
+                                    <li><input type="radio" name="paymethod" />万事达卡</li>
+                                    <br />
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div id="paymethod-2">
+                                        <form>
+                                            <input type="button" class="button" value="或者您要货到付款？">
+                                        </form>
+                                </div>
+                            </li>
+                            <li class="paymentitem">
+                                <br />
+                                货运单配送地址
+                                <br />
+                                <br />
+                                从您的地址簿中选择或新建一个账单地址。
+                                <br />
+                                <br />当配送流程开始时，我们将把本订单购物收据发送至您的电子邮件地址。
+                                <br />
+                                <br />
+                            </li>
+                    </div>
+                    <div id="right">
+                        <div id="shoppingbag">
+                            <div id="shoppingtitle">
+                                <div class=titlepay>购物袋</div>
+                            </div>
+                            <form>
+                            <div id="goods">
+                                <input type="button" class="button" value="点击查看您的商品" onclick="window.open('shoppingbag.html','_self')">
+                            </div>
+                            <div id="total">
+                                <br/>
+                                <span>总计</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>$****</span>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div id="total">
+                                <input type="button" class="button" value="确认支付">
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                <div id="menu_2">
+                    <ul class="menu_2">
+                        <li class="menuli_2">
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Contact.html">联系我们</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Register.html">注册</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Login.html">登录</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Individuation.html">个性化</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Payment.html">支付</a>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

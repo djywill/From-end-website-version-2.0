@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="same.css" />
+        <style>
+        #registermiddle{
+            text-align: center;
+        }
+        #main{
+            height: 400px;
+        }
+        .item{
+            margin-top: 20px;
+        }
+        #title{
+            font-family: SimHei,sans-serif;
+        }
+        .img{
+            display: inline-block;
+            font-size: 20px;
+            font-family: SimHei,sans-serif;
+            color:darkslategray;
+        }
+        #footer{
+            margin-top:12.3%; 
+        }
+        </style>
+    </head>
+            <script>
+        function CheckInput(inputfieid,helptext)
+        {
+            if(inputfieid.value.length==0)
+            {
+                if(helptext!=null)
+                {
+                    helptext.innerHTML="输入错误";
+                    return false;
+                }
+            }
+            else
+            {
+                if(helptext!=null)
+                {
+                    helptext.innerHTML="";
+                    return true;
+                }
+            }
+        }
+        </script>
+    <body>
+
+        <div id="container">
+            <div id="header">
+                <div id="search">
+                    <ul id="search_1">
+                        <li><a href="search.html">搜索&nbsp;&nbsp;<img src="search.png" style="margin-bottom:-2px; " /></a></li>
+                        <li><a href="shoppingbag.html">购物袋&nbsp;&nbsp;<img src="shoppingbag.png" style="margin-bottom:-2px; "/></a></li>
+                    </ul>
+                </div>
+                <div id="logo">
+                    <a href="index.html"><img src="logo.PNG" /></a>
+                </div>
+            </div>
+            <div id="registermiddle">
+                <div id="title">
+                    <h1>我的账户&nbsp;/&nbsp;注册</h1>
+                </div>
+                <div id="img">
+                    <div class="img"><img src="love.png" />&nbsp;保存您心仪的商品&nbsp;&nbsp;&nbsp;</div>
+                    <div class="img"><img src="mark.png" />&nbsp;保存常用地址&nbsp;&nbsp;&nbsp;</div>
+                    <div class="img"><img src="truck.png" />&nbsp;管理订单信息及状态&nbsp;&nbsp;&nbsp;</div>
+                </div>
+                <div id="main">
+                    <form>
+                        <div class="item">
+                            用户名：<input type="text" class="username" onblur="CheckInput(this,getElementById('username_msg'));">
+                            <span id=username_msg></span>
+                            </div>
+                        <div class="item">
+                            密码：&nbsp;&nbsp;&nbsp;<input type="password" class="password" onblur="CheckInput(this,getElementById('username_pwd'));">
+                            <span id=username_pwd></span>
+                            </div>
+                        <div class="item">
+                            姓名：&nbsp;&nbsp;&nbsp;<input type="text" class="name" onblur="CheckInput(this,getElementById('username_name'));">
+                            <span id=username_name></span>
+                            </div>
+                        <div class="item">
+                            邮箱：&nbsp;&nbsp;&nbsp;<input type="text" class="e-mail" onblur="CheckInput(this,getElementById('username_email'));">
+                            <span id=username_email></span>
+                            </div>
+                        <div class="item">
+                            <input type="radio" name="sex"  value="male">先生
+                            <input type="radio" name="sex" value="female">女士
+                        </div>
+                        <div>
+                            <div id="aa">WIll STUDIO将利用您的个人数据改善您的网站浏览体验并从总体上完善我们的服务。</div>
+                            <div id="aa">WIll STUDIO将妥善保管您的资料。</div>
+                            <div id="aa">查看<a href="PrivacyPolicy.html">隐私声明</a>，了解详细信息。</div>
+                        </div>
+                        <div class="item"><input type="checkbox" class="confirm">我同意WIll STUDIO收集我的个人信息、创建购物习惯档案</div>
+                        <div class="item"><input type="button" class="button" value="注册" ></div>        
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="menu_2">
+                    <ul class="menu_2">
+                        <li class="menuli_2">
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Contact.html">联系我们</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Register.html">注册</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Login.html">登录</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Individuation.html">个性化</a>
+                    </li>
+                    <li class="menuli_2">
+                        <a href="Payment.html">支付</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
